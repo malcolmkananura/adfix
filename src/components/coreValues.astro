@@ -1,0 +1,94 @@
+---
+import logo from '../images/adfix-logo-image.svg';
+---
+
+<div class="core_values_container">
+    <div class="item-1">
+        <h2>CORE VALUES</h2>
+    </div>
+    <div class="item-2">
+        <p>Creativity: We believe that creativity is essential to great video production. We strive to come up with new and innovative ways to tell stories and engage audiences.
+        </p>
+    </div>
+    <div class="item-3">
+        <p>Innovation: We are always looking for new ways to use technology and storytelling techniques to create even better video content.
+        </p>
+    </div>
+    <div class="item-4">
+        <p>Excellence: We demand the highest standards of quality in everything we do. We are committed to delivering work that is both visually stunning and impactful.</p>
+    </div>
+    <div class="item-5">
+        <p>Communication: We are clear and transparent in our communication with clients. We keep them informed of the project's progress and make sure that they are happy with the final product.
+        </p>
+    </div>
+    <div class="item-6">
+        <p>Collaboration: We believe that great video production is a team effort. We work closely with our clients to understand their needs and create content that meets their goals.
+
+        </p>
+    </div>
+    <div class="item-7">
+        <Fragment set:html={logo} />
+    </div>
+</div>
+
+<style>
+
+    .core_values_container{
+        display: grid;
+        grid-template-rows:10rem 10rem 10rem 10rem;
+        grid-template-columns: 14rem 30rem 14rem ;
+        margin: 5rem 5rem 0rem 8rem;
+        grid-gap: 2rem;
+
+    }
+
+
+    .item-1{
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-column-start:2;
+        grid-column-end:3;
+        padding-left: 9rem;
+    }
+    .item-2{
+        grid-row-start:2;
+        grid-row-end:3;
+        grid-column-start:1;
+        grid-column-end:2;
+    }
+    .item-3{
+        grid-row-start:3;
+        grid-row-end:4;
+        grid-column-start:1;
+        grid-column-end:2;
+    }
+    .item-4{
+        grid-row-start:4;
+        grid-row-end:5;
+        grid-column-start:2;
+        grid-column-end:3;
+        padding-left: 6rem;
+        padding-right:6rem;
+    }
+    .item-5{
+        grid-row-start:3;
+        grid-row-end:4;
+        grid-column-start:3;
+        grid-column-end:4;
+    }
+    .item-6{
+        grid-row-start:2;
+        grid-row-end:3;
+        grid-column-start:3;
+        grid-column-end:4;
+    }
+    .item-7{
+        grid-row-start:2;
+        grid-row-end:4;
+        grid-column-start:2;
+        grid-column-end:3;
+        z-index:1;
+        width: 20rem;
+    }
+
+</style>
