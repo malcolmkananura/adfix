@@ -48,11 +48,30 @@ import logo from '../images/adfix.svg?raw';
 
     }
 
-    a {
-        text-decoration: none;
-        color: #000000 ;
+    a{
+        color: black;
     }
 
+    li a:link {
+        text-decoration: none;
+    }
+
+    li a:visited {
+        text-decoration: none;
+    }
+
+    li a:hover {
+        text-decoration: underline #6FBF46;
+    }
+
+    li a:active {
+        text-decoration: underline;
+        border-bottom: 2px #6FBF46;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
 
     .btn{
         margin-left: 5rem;
