@@ -10,6 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.3.2"
+    "astro": "^3.3.2",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-html5video": "^2.5.1"
   }
 }

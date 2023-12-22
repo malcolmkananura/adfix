@@ -1,0 +1,174 @@
+---
+
+import { Image } from 'astro:assets';
+
+import Land1 from '../images/land01.jpg';
+import Land2 from '../images/land02.jpg';
+import Land3 from '../images/land03.jpg';
+import Land4 from '../images/land04.jpg';
+import Land5 from '../images/land05.jpg';
+import Land6 from '../images/land06.jpg';
+import port1 from '../images/port01.jpg';
+import port2 from '../images/port02.jpg';
+import port3 from '../images/port03.jpg';
+import port4 from '../images/port04.jpg';
+import port5 from '../images/port05.jpg';
+import port6 from '../images/port06.jpg';
+import sqr1 from '../images/sqr01.jpg';
+import sqr2 from '../images/sqr02.jpg';
+import sqr3 from '../images/sqr03.jpg';
+import sqr4 from '../images/sqr04.jpg';
+import sqr5 from '../images/sqr05.jpg';
+
+---
+
+<div class="gallery">
+    <div class="v-stretch">
+        <Image src={port1}  alt="" class='image'/>
+
+    </div>
+    <div class="h-stretch">
+        <Image src={Land1}  alt="" class='image'/>
+
+    </div>
+    <div class="big-stretch">
+        <Image src={sqr3}  alt="" class='image'/>
+
+    </div>
+    <div class="v-stretch">
+        <Image src={port5}  alt="" class='image'/>
+
+    </div>
+    <div class="h-stretch">
+        <Image src={Land2}  alt="" class='image'/>
+
+    </div>
+    <div class="big-stretch">
+        <Image src={sqr2}  alt="" class='image'/>
+
+    </div>
+    <div class="v-stretch">
+        <Image src={port4}  alt="" class='image'/>
+
+    </div>
+    <div class="h-stretch">
+        <Image src={Land4}  alt="" class='image'/>
+
+    </div>
+    <div class="big-stretch">
+        <Image src={sqr1}  alt="" class='image'/>
+
+    </div>
+    <div class="v-stretch">
+        <Image src={port3}  alt="" class='image'/>
+
+    </div>
+    <div class="small-stretch">
+        <Image src={sqr5}  alt="" class='image'/>
+
+    </div>
+    <div class="v-stretch">
+        <Image src={port6}  alt="" class='image'/>
+
+    </div>
+    <div class="h-stretch">
+        <Image src={Land5}  alt="" class='image'/>
+
+    </div>
+    <div class="h-stretch">
+        <Image src={Land3}  alt="" class='image'/>
+
+    </div>
+    <div class="big-stretch">
+        <Image src={port3}  alt="" class='image'/>
+
+    </div>
+    <div class="big-stretch">
+        <Image src={Land6}  alt="" class='image'/>
+
+    </div>
+    <div class="v-stretch">
+        <Image src={port2}  alt="" class='image'/>
+
+    </div>
+
+    <div class="small-stretch">
+        <Image src={sqr4}  alt="" class='image'/>
+
+    </div>
+    <div class="h-stretch">
+        <Image src={Land4}  alt="" class='image'/>
+
+    </div>
+    <div class="h-stretch">
+        <Image src={Land4}  alt="" class='image'/>
+
+    </div>
+    <div class="small-stretch">
+        <Image src={sqr4}  alt="" class='image'/>
+
+    </div>
+    <div class="small-stretch">
+        <Image src={sqr4}  alt="" class='image'/>
+
+    </div>
+</div>
+
+
+<style>
+
+    .gallery{
+        padding: 0px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 0.1rem;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-auto-rows: 10rem;
+        grid-auto-flow: dense;
+    }
+    .v-stretch {
+        grid-row: span 2;
+    }
+
+    .h-stretch {
+        grid-column: span 2;
+    }
+
+    .big-stretch {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    .small-stretch {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    
+    .gallery div .image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 560px) {
+        .v-stretch {
+        grid-row: span 1;
+    }
+
+    .h-stretch {
+        grid-column: span 1;
+    }
+
+    .big-stretch {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .small-stretch {
+        grid-row: span 0.5;
+        grid-column: span 0.5;
+    }
+    }
+
+</style>

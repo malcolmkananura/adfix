@@ -3,35 +3,93 @@ import logo from '../images/adfix.svg?raw';
 ---
 
 
-    
+
     <div class="header_container">
        <div>
-            <!-- <img src = '../images/Adfix-logo.png' alt="adfix logo"/> -->
-            <!-- <img src="../images/adfix.svg" alt="description of the image" > -->
+             <!-- <img src = '../images/Adfix-logo.png' alt="adfixlogo"> -->
+             <!-- <img src="../images/adfix.svg" alt="description"> -->
             <Fragment set:html={logo} />
        </div>
        <ul>
             <li class="item"><a href="/">Home</a></li>
-            <li class="item"><a href="/Portfolio">Portfolio</a></li>
+            <li class="item"><a href="/Portfolio">Portfolio</a>
             <li class="item"><a href="/About">About</a></li>
             <button class="btn">Contact Us</button>
-       </ul> 
+       </ul>
     </div>
-    
-<style>
 
+ <style>
+    .header_container{
+            width: 100%;
+            display: grid;
+
+        ul{
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        text-decoration: none;
+    }
+
+    .item{
+     padding-left: 20px;
+     list-style: none;
+     margin-left: 5rem;
+
+    }
+
+    a{
+        color: black;
+    }
+
+    li a:link {
+        text-decoration: none;
+    }
+
+    li a:visited {
+        text-decoration: none;
+    }
+
+    li a:hover {
+        text-decoration: underline #6FBF46;
+    }
+
+    li a:active {
+        text-decoration: underline;
+        border-bottom: 2px #6FBF46;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    .btn{
+        margin-left: 5rem;
+        padding:10px ;
+        font-size: 20px;
+        font-weight: 300px;
+        background-color: #6FBF46 ;
+        border: none;
+        border-radius: 4px;
+        color: white;
+
+    }
+
+}
+
+    @media only screen and (min-width: 768px) {
     .header_container{
         display: flex;
         justify-content: space-between;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        /* margin-left: 2rem;
+        margin-right: 2rem; */
         padding-top: 0.5rem;
         background-color: white;
     }
     img{
         height:80px;
         width:100px;
-    }
+        }
     ul{
        margin-top: 0;
         text-decoration: none;
@@ -84,4 +142,5 @@ import logo from '../images/adfix.svg?raw';
         color: white;
 
     }
+}
 </style>

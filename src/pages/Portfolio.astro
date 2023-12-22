@@ -1,8 +1,54 @@
 ---
+import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+import BigVid from "../components/BigVid.astro";
+import Gallery from "../components/Gallery.astro";
+import VideoCards from "../components/VideoCards.jsx";
+import YtCard from "../components/YtCard.astro";
+
 ---
 
 
-<Layout title="Portfolio"></Layout>
+<Layout title="Portfolio">
+<div class="container">
+    <div class="bigvid">
+    <!-- <BigVid/> -->
+    </div>
+    
+    <div class="cards">
+        <Card/>
+        <hr/>
+        <VideoCards/>
+        <!-- <YtCard/> -->
 
-<h1>This is the Porfolio page</h1>
+    </div>
+</div>
+
+<div class="gallery">
+    <Gallery/>
+</div>
+</Layout>
+
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 45rem );
+        grid-auto-rows: min-content;
+        grid-gap: 2rem;
+        grid-auto-flow: dense;
+        justify-content: center;
+    }
+
+    .bigvid{
+        width: minmax(25rem, 35rem); 
+    }
+    .cards{
+        width: minmax(25rem, 35rem);
+    }
+    .gallery{
+        margin-top: 2%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+</style>../components/VideoCards.jsx
